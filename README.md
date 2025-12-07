@@ -1,7 +1,47 @@
 
 # KERNEL Transform Your Use of AI
-## aaaa
+   After tracking and analyzing over 1000 real work prompts, discovered thath sucessful prompts follow "six" consistent pattrns
+The Framework;
+  K . Keep it simple
+    -Bad: 500 words of context
+    -Good: One clear goal
+    -Example: Instead of "I need help writing something about Redis," use "Write a technical tutuorial on Redis caching"
+      Result:70% less token usage, 3x faster responses
+  
+  E . Easy to verify
+    -Your prompt needs clear success criteria
+    -Replace "make it engaging" with "inculde 3 code examples"
+    -If you can't verify success, AI can't deliver it
+     Result: 85% success rate with clear criteria vs 41% without
+  
+  R . Reprodcible results
+    -Avoid temporal references ("current trends","latest best")
+    -Use specific versions and exact requirements
+    -Same prompt should work next week
+  
+  N . Narrow scope
+    -One prompt = one goal
+    -Don't combine code + docs + test in one request
+    -Split complex tasks
+     Result: Single*goal prompts: 89% satisfaction
+  
+  E . Explicit constraints
+    -Tell AI what NOT to do
+    -"Python code" to "Python code. No external liabraries. No functions over 20 lines."
+    -Reduces unwanted outputs by 91%
+  
+  L . Logical structure Format very prompt be like
+    1- Context (input)
+    2- Task (function)
+    3- Constraints (parameters)
+    4- Format (output)
 
+   Example
+     Task: Pythone script to merge CSVs
+     Input: Multiple CSVs, same colums
+     Constraints: Panda only, <50 lines
+     Output: Single merged.csv
+     Verify: Run on test_data/
 
 
 
